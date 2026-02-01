@@ -1,4 +1,3 @@
-
 const TG_BOT_TOKEN = "8563380473:AAG8wKjWbjps44ei-r5o74cdk97oybwy4b8";
 const TG_CHAT_ID = "913189764";
 const TG_PARSE_MODE = "HTML";
@@ -72,7 +71,7 @@ function updateFlag() {
 function updatePhoneCode(force = true) {
   if (!elCountry || !elPhone) return;
 
-  const code = elCountry.value; // "+7", "+1", ...
+  const code = elCountry.value; 
   let val = (elPhone.value || "").trim();
 
   // Удаляем старый код в начале (любой +цифры)
@@ -160,7 +159,6 @@ async function sendForm() {
     setLoading(true);
     await sendToTelegram(msg);
 
-    // Покажем успех
     if (elSuccess) elSuccess.style.display = "block";
 
     // Очистка

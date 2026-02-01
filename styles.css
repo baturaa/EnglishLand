@@ -136,7 +136,7 @@ h1 span {
 
 .phone-box { display: flex; gap: 10px; }
 
-/* ФЛАГ СЛЕВА В SELECT */
+
 #country {
   padding-left: 58px;
   background-repeat: no-repeat;
@@ -144,7 +144,7 @@ h1 span {
   background-size: 28px 20px;
 }
 
-/* кнопка */
+
 .form-box button {
   width: 100%;
   height: 70px;
